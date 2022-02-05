@@ -9,13 +9,14 @@ body {
     height: 100vh;
     background-repeat: none;
     background-position: fixed;
+    background-size: cover;
 }
 
 .header {
     height: 10vh;
     width: 100%;
     color: rgb(46, 18, 207);
-    background-color: rgba(133, 124, 124, 0.5);
+    /* background-color: rgba(133, 124, 124, 0.5); */
 }
 
 .col {
@@ -23,10 +24,14 @@ body {
     /* text-align: center; */
     width: 30%;
     height: 90vh;
-    background-color: rgba(255, 255, 255, .5);
+    /* background-color: rgba(255, 255, 255, .5); */
     background-position: fixed;
     top: 0px;
     overflow: auto;
+}
+
+.mainCol {
+    width: 40%;
 }
 
 .center {
@@ -43,7 +48,7 @@ body {
     border: 1px solid grey;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 5px 8px 8px #888888;
+    box-shadow: 3px 5px 8px #888888;
 }
 
 .logCard {
@@ -114,4 +119,16 @@ img {
 
 .cardFooter {
     text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .col {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .col {
+        width: 100%;
+    }
 }
